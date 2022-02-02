@@ -23,9 +23,7 @@ molecule:
       - image: "fedora"
         tag: "latest"
       - image: "fedora"
-        tag: "rawhide"
-      - image: "ubuntu"
-        tag: "latest"
+        tag: "rawhide"    # TODO check on ubuntu build
 
 galaxy:
   script:
