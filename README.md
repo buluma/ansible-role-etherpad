@@ -4,7 +4,7 @@ Install and configure Etherpad on your system.
 
 |GitHub|GitLab|Quality|Downloads|Version|
 |------|------|-------|---------|-------|
-|[![github](https://github.com/buluma/ansible-role-etherpad/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-etherpad/actions)|[![gitlab](https://gitlab.com/buluma/ansible-role-etherpad/badges/main/pipeline.svg)](https://gitlab.com/buluma/ansible-role-etherpad)|[![quality](https://img.shields.io/ansible/quality/57893)](https://galaxy.ansible.com/robertdebock/etherpad)|[![downloads](https://img.shields.io/ansible/role/d/57893)](https://galaxy.ansible.com/robertdebock/etherpad)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-etherpad.svg)](https://github.com/buluma/ansible-role-etherpad/releases/)|
+|[![github](https://github.com/buluma/ansible-role-etherpad/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-etherpad/actions)|[![gitlab](https://gitlab.com/buluma/ansible-role-etherpad/badges/main/pipeline.svg)](https://gitlab.com/buluma/ansible-role-etherpad)|[![quality](https://img.shields.io/ansible/quality/57893)](https://galaxy.ansible.com/robertdebock/etherpad)|[![downloads](https://img.shields.io/ansible/role/d/57893)](https://galaxy.ansible.com/buluma/etherpad)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-etherpad.svg)](https://github.com/buluma/ansible-role-etherpad/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
