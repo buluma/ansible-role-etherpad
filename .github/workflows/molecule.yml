@@ -40,9 +40,7 @@ jobs:
           - image: "fedora"
             tag: "latest"
           - image: "fedora"
-            tag: "rawhide"
-          - image: "ubuntu"
-            tag: "latest"
+            tag: "rawhide"   # TODO check for lighter ubuntu
     steps:
       - name: checkout
         uses: actions/checkout@v2
