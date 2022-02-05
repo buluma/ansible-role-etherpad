@@ -16,15 +16,41 @@ molecule:
   retry: 1
   parallel:
     matrix:
-      - image: "debian"
-        tag: "bullseye"
-      - image: "fedora"
-        tag: "34"
-      - image: "fedora"
+      - image: "enterpriselinux"
         tag: "latest"
-      - image: "fedora"
-        tag: "rawhide"    # TODO check on ubuntu build
+      - image: "debian-systemd"
+        tag: "latest"
+      - image: "fedora-systemd"
+        tag: "34"
+      - image: "fedora-systemd"
+        tag: "latest"
+      - image: "fedora-systemd"
+        tag: "rawhide"
+      - image: "docker-ubuntu-systemd"
+        tag: "latest"
+
+testing:
+  script:
+    - image=${image} tag=${tag} molecule test
+  rules:
+    - if: $CI_COMMIT_REF_NAME == "testing"
+  retry: 1
+  parallel:
+    matrix:
+      - image: "enterpriselinux"
+        tag: "latest"
+      - image: "debian-systemd"
+        tag: "latest"
+      - image: "fedora-systemd"
+        tag: "34"
+      - image: "fedora-systemd"
+        tag: "latest"
+      - image: "fedora-systemd"
+        tag: "rawhide"
+      - image: "docker-ubuntu-systemd"
+        tag: "latest"
 
 galaxy:
   script:
-    - ansible-galaxy role info ${CI_PROJECT_NAMESPACE}.${CI_PROJECT_NAME}
+    # - ansible-galaxy role info ${CI_PROJECT_NAMESPACE}.${CI_PROJECT_NAME}
+    - ansible-galaxy role info buluma.etherpad
