@@ -16,8 +16,6 @@ molecule:
   retry: 1
   parallel:
     matrix:
-      - image: "enterpriselinux"
-        tag: "latest"
       - image: "debian-systemd"
         tag: "latest"
       - image: "fedora-systemd"
@@ -26,8 +24,6 @@ molecule:
         tag: "latest"
       - image: "fedora-systemd"
         tag: "rawhide"
-      - image: "docker-ubuntu-systemd"
-        tag: "latest"
 
 testing:
   script:
@@ -37,8 +33,6 @@ testing:
   retry: 1
   parallel:
     matrix:
-      - image: "enterpriselinux"
-        tag: "latest"
       - image: "debian-systemd"
         tag: "latest"
       - image: "fedora-systemd"
@@ -47,8 +41,6 @@ testing:
         tag: "latest"
       - image: "fedora-systemd"
         tag: "rawhide"
-      - image: "docker-ubuntu-systemd"
-        tag: "latest"
 
 galaxy:
   script:
