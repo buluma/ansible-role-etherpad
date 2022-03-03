@@ -37,8 +37,6 @@ testing:
   retry: 1
   parallel:
     matrix:
-      - image: "enterpriselinux"
-        tag: "latest"
       - image: "debian-systemd"
         tag: "latest"
       - image: "fedora-systemd"
@@ -47,8 +45,6 @@ testing:
         tag: "latest"
       - image: "fedora-systemd"
         tag: "rawhide"
-      - image: "docker-ubuntu-systemd"
-        tag: "focal"
 
 role_testing:
   script:
