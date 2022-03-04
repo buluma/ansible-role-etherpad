@@ -1,5 +1,5 @@
 ---
-image: "buluma/github-action-molecule:4.0.5"
+image: "buluma/github-action-molecule:4.0.6"
 
 services:
   - docker:dind
@@ -16,6 +16,8 @@ molecule:
   retry: 1
   parallel:
     matrix:
+      - image: "enterpriselinux"
+        tag: "latest"
       - image: "debian-systemd"
         tag: "latest"
       - image: "fedora-systemd"
@@ -24,6 +26,8 @@ molecule:
         tag: "latest"
       - image: "fedora-systemd"
         tag: "rawhide"
+      - image: "docker-ubuntu-systemd"
+        tag: "focal"
 
 testing:
   script:
@@ -42,6 +46,46 @@ testing:
       - image: "fedora-systemd"
         tag: "rawhide"
 
+role_testing:
+  script:
+    - image=${image} tag=${tag} ansible-galaxy install buluma.etherpad
+  rules:
+    - if: $CI_COMMIT_REF_NAME == "testing"
+  retry: 1
+  parallel:
+    matrix:
+      - image: "enterpriselinux"
+        tag: "latest"
+      - image: "debian-systemd"
+        tag: "latest"
+      - image: "fedora-systemd"
+        tag: "34"
+      - image: "fedora-systemd"
+        tag: "latest"
+      - image: "fedora-systemd"
+        tag: "rawhide"
+      - image: "docker-ubuntu-systemd"
+        tag: "focal"
+
 galaxy:
   script:
     - ansible-galaxy role info buluma.etherpad
+
+role_testing_live:
+  script:
+    - image=${image} tag=${tag} ansible-galaxy install buluma.etherpad
+  retry: 1
+  parallel:
+    matrix:
+      - image: "enterpriselinux"
+        tag: "latest"
+      - image: "debian-systemd"
+        tag: "latest"
+      - image: "fedora-systemd"
+        tag: "34"
+      - image: "fedora-systemd"
+        tag: "latest"
+      - image: "fedora-systemd"
+        tag: "rawhide"
+      - image: "docker-ubuntu-systemd"
+        tag: "focal"
