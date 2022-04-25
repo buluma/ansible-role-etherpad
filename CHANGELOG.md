@@ -8,6 +8,10 @@
 
 - Check EL [\#9](https://github.com/buluma/ansible-role-etherpad/issues/9)
 
+**Merged pull requests:**
+
+- Bump buluma/gh-action-auto-merge-dependabot-updates from 1.0.4 to 1.0.5 [\#11](https://github.com/buluma/ansible-role-etherpad/pull/11) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [1.0.7](https://github.com/buluma/ansible-role-etherpad/tree/1.0.7) (2022-03-21)
 
 [Full Changelog](https://github.com/buluma/ansible-role-etherpad/compare/1.0.6...1.0.7)
