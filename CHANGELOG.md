@@ -1,8 +1,8 @@
 # Changelog
 
-## [Unreleased](https://github.com/buluma/ansible-role-etherpad/tree/HEAD)
+## [1.0.8](https://github.com/buluma/ansible-role-etherpad/tree/1.0.8) (2022-05-11)
 
-[Full Changelog](https://github.com/buluma/ansible-role-etherpad/compare/1.0.7...HEAD)
+[Full Changelog](https://github.com/buluma/ansible-role-etherpad/compare/1.0.7...1.0.8)
 
 **Closed issues:**
 
