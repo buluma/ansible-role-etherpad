@@ -14,9 +14,7 @@ galaxy_info:
         - all
     - name: Ubuntu
       versions:
-        - focal
         - jammy
-        - bionic
 
   galaxy_tags:
     - etherpad
