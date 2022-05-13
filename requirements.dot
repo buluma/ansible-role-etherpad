@@ -1,0 +1,17 @@
+digraph PhiloDilemma {
+  label = "Michael Buluma" ;
+  overlap=false
+  {
+    "etherpad" [fillcolor=yellow style=filled penwidth=3]
+    "buluma.bootstrap" [fillcolor=green style=filled]
+    "buluma.core_dependencies" [fillcolor=green style=filled]
+    "buluma.epel" [fillcolor=green style=filled]
+    "buluma.npm" [fillcolor=green style=filled]
+    "buluma.service" [fillcolor=green style=filled]
+  }
+  "etherpad" -> "buluma.bootstrap"
+  "etherpad" -> "buluma.core_dependencies"
+  "etherpad" -> "buluma.epel"
+  "etherpad" -> "buluma.npm"
+  "etherpad" -> "buluma.service"
+}
