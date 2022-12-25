@@ -1,11 +1,7 @@
 ---
 image: "buluma/github-action-molecule:4.0.9"
 
-services:
-  - docker:dind
-
 variables:
-  DOCKER_HOST: "tcp://docker:2375"
   PY_COLORS: 1
 
 molecule:
@@ -16,13 +12,9 @@ molecule:
   retry: 1
   parallel:
     matrix:
-      - image: "fedora-systemd"
-        tag: "34"
-      - image: "fedora-systemd"
-        tag: "35"
-      - image: "fedora-systemd"
+      - image: "fedora"
         tag: "latest"
-      - image: "docker-ubuntu-systemd"
+      - image: "ubuntu"
         tag: "latest"
 
 testing:
