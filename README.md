@@ -4,11 +4,12 @@ Install and configure Etherpad on your system.
 
 |GitHub|GitLab|Quality|Downloads|Version|Issues|Pull Requests|
 |------|------|-------|---------|-------|------|-------------|
-|[![github](https://github.com/buluma/ansible-role-etherpad/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-etherpad/actions)|[![gitlab](https://gitlab.com/buluma/ansible-role-etherpad/badges/main/pipeline.svg)](https://gitlab.com/buluma/ansible-role-etherpad)|[![quality](https://img.shields.io/ansible/quality/57893)](https://galaxy.ansible.com/buluma/etherpad)|[![downloads](https://img.shields.io/ansible/role/d/57893)](https://galaxy.ansible.com/buluma/etherpad)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-etherpad.svg)](https://github.com/buluma/ansible-role-etherpad/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-etherpad.svg)](https://github.com/buluma/ansible-role-etherpad/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-etherpad.svg)](https://github.com/buluma/ansible-role-etherpad/pulls/)|
+|[![github](https://github.com/buluma/ansible-role-etherpad/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-etherpad/actions)|[![gitlab](https://gitlab.com/shadowwalker/ansible-role-etherpad/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-etherpad)|[![quality](https://img.shields.io/ansible/quality/57893)](https://galaxy.ansible.com/buluma/etherpad)|[![downloads](https://img.shields.io/ansible/role/d/57893)](https://galaxy.ansible.com/buluma/etherpad)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-etherpad.svg)](https://github.com/buluma/ansible-role-etherpad/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-etherpad.svg)](https://github.com/buluma/ansible-role-etherpad/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-etherpad.svg)](https://github.com/buluma/ansible-role-etherpad/pulls/)|
 
 ## [Example Playbook](#example-playbook)
 
-This example is taken from `molecule/default/converge.yml` and is tested on each push, pull request and release.
+This example is taken from [`molecule/default/converge.yml`](https://github.com/buluma/ansible-role-etherpad/blob/master/molecule/default/converge.yml) and is tested on each push, pull request and release.
+
 ```yaml
 ---
 - name: Converge
@@ -23,7 +24,8 @@ This example is taken from `molecule/default/converge.yml` and is tested on each
     - role: buluma.etherpad
 ```
 
-The machine needs to be prepared. In CI this is done using `molecule/default/prepare.yml`:
+The machine needs to be prepared. In CI this is done using [`molecule/default/prepare.yml`](https://github.com/buluma/ansible-role-etherpad/blob/master/molecule/default/prepare.yml):
+
 ```yaml
 ---
 - name: Prepare
@@ -38,10 +40,12 @@ The machine needs to be prepared. In CI this is done using `molecule/default/pre
     - role: buluma.npm
 ```
 
+Also see a [full explanation and example](https://buluma.github.io/how-to-use-these-roles.html) on how to use these roles.
 
 ## [Role Variables](#role-variables)
 
-The default values for the variables are set in `defaults/main.yml`:
+The default values for the variables are set in [`defaults/main.yml`](https://github.com/buluma/ansible-role-etherpad/blob/master/defaults/main.yml):
+
 ```yaml
 ---
 # defaults file for etherpad
@@ -55,19 +59,19 @@ etherpad_port: 9001
 
 ## [Requirements](#requirements)
 
-- pip packages listed in [requirements.txt](https://github.com/buluma/ansible-role-etherpad/blob/main/requirements.txt).
+- pip packages listed in [requirements.txt](https://github.com/buluma/ansible-role-etherpad/blob/master/requirements.txt).
 
-## [Status of used roles](#status-of-requirements)
+## [State of used roles](#state-of-used-roles)
 
 The following roles are used to prepare a system. You can prepare your system in another way.
 
 | Requirement | GitHub | GitLab |
 |-------------|--------|--------|
-|[buluma.bootstrap](https://galaxy.ansible.com/buluma/bootstrap)|[![Build Status GitHub](https://github.com/buluma/ansible-role-bootstrap/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-bootstrap/actions)|[![Build Status GitLab ](https://gitlab.com/buluma/ansible-role-bootstrap/badges/main/pipeline.svg)](https://gitlab.com/buluma/ansible-role-bootstrap)|
-|[buluma.core_dependencies](https://galaxy.ansible.com/buluma/core_dependencies)|[![Build Status GitHub](https://github.com/buluma/ansible-role-core_dependencies/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-core_dependencies/actions)|[![Build Status GitLab ](https://gitlab.com/buluma/ansible-role-core_dependencies/badges/main/pipeline.svg)](https://gitlab.com/buluma/ansible-role-core_dependencies)|
-|[buluma.epel](https://galaxy.ansible.com/buluma/epel)|[![Build Status GitHub](https://github.com/buluma/ansible-role-epel/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-epel/actions)|[![Build Status GitLab ](https://gitlab.com/buluma/ansible-role-epel/badges/main/pipeline.svg)](https://gitlab.com/buluma/ansible-role-epel)|
-|[buluma.npm](https://galaxy.ansible.com/buluma/npm)|[![Build Status GitHub](https://github.com/buluma/ansible-role-npm/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-npm/actions)|[![Build Status GitLab ](https://gitlab.com/buluma/ansible-role-npm/badges/main/pipeline.svg)](https://gitlab.com/buluma/ansible-role-npm)|
-|[buluma.service](https://galaxy.ansible.com/buluma/service)|[![Build Status GitHub](https://github.com/buluma/ansible-role-service/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-service/actions)|[![Build Status GitLab ](https://gitlab.com/buluma/ansible-role-service/badges/main/pipeline.svg)](https://gitlab.com/buluma/ansible-role-service)|
+|[buluma.bootstrap](https://galaxy.ansible.com/buluma/bootstrap)|[![Build Status GitHub](https://github.com/buluma/ansible-role-bootstrap/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-bootstrap/actions)|[![Build Status GitLab](https://gitlab.com/shadowwalker/ansible-role-bootstrap/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-bootstrap)|
+|[buluma.core_dependencies](https://galaxy.ansible.com/buluma/core_dependencies)|[![Build Status GitHub](https://github.com/buluma/ansible-role-core_dependencies/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-core_dependencies/actions)|[![Build Status GitLab](https://gitlab.com/shadowwalker/ansible-role-core_dependencies/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-core_dependencies)|
+|[buluma.epel](https://galaxy.ansible.com/buluma/epel)|[![Build Status GitHub](https://github.com/buluma/ansible-role-epel/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-epel/actions)|[![Build Status GitLab](https://gitlab.com/shadowwalker/ansible-role-epel/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-epel)|
+|[buluma.npm](https://galaxy.ansible.com/buluma/npm)|[![Build Status GitHub](https://github.com/buluma/ansible-role-npm/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-npm/actions)|[![Build Status GitLab](https://gitlab.com/shadowwalker/ansible-role-npm/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-npm)|
+|[buluma.service](https://galaxy.ansible.com/buluma/service)|[![Build Status GitHub](https://github.com/buluma/ansible-role-service/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-service/actions)|[![Build Status GitLab](https://gitlab.com/shadowwalker/ansible-role-service/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-service)|
 
 ## [Context](#context)
 
@@ -83,8 +87,8 @@ This role has been tested on these [container images](https://hub.docker.com/u/b
 
 |container|tags|
 |---------|----|
-|fedora|all|
-|ubuntu|focal|
+|[Fedora](https://hub.docker.com/repository/docker/buluma/fedora/general)|all|
+|[Ubuntu](https://hub.docker.com/repository/docker/buluma/ubuntu/general)|jammy|
 
 The minimum version of Ansible required is 2.10, tests have been done to:
 
@@ -92,28 +96,22 @@ The minimum version of Ansible required is 2.10, tests have been done to:
 - The current version.
 - The development version.
 
-## [Exceptions](#exceptions)
-
-Some roles can't run on a specific distribution or version. Here are some exceptions.
-
-| variation                 | reason                 |
-|---------------------------|------------------------|
-| alpine | Not idempotent on starting the service. |
-| ubuntu | Your npm version "3.5.2" is too old. npm 3.10.x or higher is required. |
-| amazonlinux | Failed to set execute bit on remote files |
-| debian:testing | The repository 'https://deb.nodesource.com/node_10.x bullseye Release' does not have a Release file. |
-
-
 If you find issues, please register them in [GitHub](https://github.com/buluma/ansible-role-etherpad/issues)
 
 ## [Changelog](#changelog)
 
-[Role History](https://github.com/buluma/ansible-role-etherpad/blob/main/CHANGELOG.md)
+[Role History](https://github.com/buluma/ansible-role-etherpad/blob/master/CHANGELOG.md)
 
 ## [License](#license)
 
-Apache-2.0
+[Apache-2.0](https://github.com/buluma/ansible-role-etherpad/blob/master/LICENSE).
 
 ## [Author Information](#author-information)
 
 [Michael Buluma](https://buluma.github.io/)
+
+Please consider [sponsoring me](https://github.com/sponsors/buluma).
+
+### [Special Thanks](#special-thanks)
+
+Template inspired by [Robert de Bock](https://github.com/robertdebock)
