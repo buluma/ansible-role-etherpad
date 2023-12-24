@@ -1,10 +1,10 @@
-# [Ansible role etherpad](#etherpad)
+# Ansible role [etherpad](https://galaxy.ansible.com/ui/standalone/roles/buluma/etherpad/documentation)
 
 Install and configure Etherpad on your system.
 
-|GitHub|Version|Issues|Pull Requests|
-|------|-------|------|-------------|
-|[![github](https://github.com/buluma/ansible-role-etherpad/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-etherpad/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-etherpad.svg)](https://github.com/buluma/ansible-role-etherpad/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-etherpad.svg)](https://github.com/buluma/ansible-role-etherpad/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-etherpad.svg)](https://github.com/buluma/ansible-role-etherpad/pulls/)|
+|GitHub|Version|Issues|Pull Requests|Downloads|
+|------|-------|------|-------------|---------|
+|[![github](https://github.com/buluma/ansible-role-etherpad/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-etherpad/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-etherpad.svg)](https://github.com/buluma/ansible-role-etherpad/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-etherpad.svg)](https://github.com/buluma/ansible-role-etherpad/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-etherpad.svg)](https://github.com/buluma/ansible-role-etherpad/pulls/)|[![Ansible Role](https://img.shields.io/ansible/role/d/buluma/etherpad)](https://galaxy.ansible.com/ui/standalone/roles/buluma/etherpad/documentation)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -108,9 +108,7 @@ If you find issues, please register them in [GitHub](https://github.com/buluma/a
 
 ## [Author Information](#author-information)
 
-[Michael Buluma](https://buluma.github.io/)
+[Shadow Walker](https://buluma.github.io/)
 
-
-### [Special Thanks](#special-thanks)
 
 Template inspired by [Robert de Bock](https://github.com/robertdebock)
