@@ -2,7 +2,15 @@
 
 ## [Unreleased](https://github.com/buluma/ansible-role-etherpad/tree/HEAD)
 
-[Full Changelog](https://github.com/buluma/ansible-role-etherpad/compare/1.0.9...HEAD)
+[Full Changelog](https://github.com/buluma/ansible-role-etherpad/compare/1.0.10...HEAD)
+
+**Closed issues:**
+
+- Update buluma/todo-to-issue-action@v1.0.1 @buluma [\#21](https://github.com/buluma/ansible-role-etherpad/issues/21)
+
+## [1.0.10](https://github.com/buluma/ansible-role-etherpad/tree/1.0.10) (2023-12-25)
+
+[Full Changelog](https://github.com/buluma/ansible-role-etherpad/compare/1.0.9...1.0.10)
 
 **Closed issues:**
 
@@ -43,19 +51,19 @@
 
 ## [1.0.4](https://github.com/buluma/ansible-role-etherpad/tree/1.0.4) (2022-02-14)
 
-[Full Changelog](https://github.com/buluma/ansible-role-etherpad/compare/1.0.3...1.0.4)
+[Full Changelog](https://github.com/buluma/ansible-role-etherpad/compare/1.0.2...1.0.4)
 
 **Merged pull requests:**
 
 - Bump buluma/molecule-action from 4.0.5 to 4.0.6 [\#6](https://github.com/buluma/ansible-role-etherpad/pull/6) ([dependabot[bot]](https://github.com/apps/dependabot))
 
-## [1.0.3](https://github.com/buluma/ansible-role-etherpad/tree/1.0.3) (2022-02-06)
-
-[Full Changelog](https://github.com/buluma/ansible-role-etherpad/compare/1.0.2...1.0.3)
-
 ## [1.0.2](https://github.com/buluma/ansible-role-etherpad/tree/1.0.2) (2022-02-06)
 
-[Full Changelog](https://github.com/buluma/ansible-role-etherpad/compare/1.0.1...1.0.2)
+[Full Changelog](https://github.com/buluma/ansible-role-etherpad/compare/1.0.3...1.0.2)
+
+## [1.0.3](https://github.com/buluma/ansible-role-etherpad/tree/1.0.3) (2022-02-06)
+
+[Full Changelog](https://github.com/buluma/ansible-role-etherpad/compare/1.0.1...1.0.3)
 
 **Closed issues:**
 
