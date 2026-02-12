@@ -1,4 +1,3 @@
----
 galaxy_info:
   author: Michael Buluma
   namespace: buluma
@@ -6,17 +5,14 @@ galaxy_info:
   description: Install and configure Etherpad on your system.
   license: Apache-2.0
   company: ShadowNet
-  min_ansible_version: "2.12"
-
+  min_ansible_version: '2.12'
   platforms:
-    - name: Fedora
-      versions:
-        - all
-    - name: Ubuntu
-      versions:
-        - jammy
-
+  - name: Fedora
+    versions:
+    - all
+  - name: Ubuntu
+    versions:
+    - all
   galaxy_tags:
-    - etherpad
-
+  - etherpad
 dependencies: []

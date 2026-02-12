@@ -43,6 +43,8 @@ jobs:
           - image: "docker-molecule-images"
             tag: "latest"
           - image: "docker-molecule-images"
+            tag: "latest"
+          - image: "docker-molecule-images"
             tag: "jammy"
     steps:
       - name: checkout
