@@ -5,4 +5,4 @@
 repository:
   description: Install and configure Etherpad on your system.
   homepage: https://buluma.github.io/
-  topics: etherpad, ansible, molecule, tox, playbook
+  topics: etherpad, ansible, molecule, playbook
