@@ -1,3 +1,4 @@
+---
 galaxy_info:
   author: Michael Buluma
   namespace: buluma
@@ -7,12 +8,12 @@ galaxy_info:
   company: ShadowNet
   min_ansible_version: '2.12'
   platforms:
-  - name: Fedora
-    versions:
-    - all
+    - name: Fedora
+      versions:
+        - all
   - name: Ubuntu
     versions:
     - all
   galaxy_tags:
-  - etherpad
+    - etherpad
 dependencies: []
