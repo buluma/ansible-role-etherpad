@@ -1,45 +1,38 @@
 ---
-# tasks file for etherpad
-
 - name: Import assert.yml
   ansible.builtin.import_tasks: assert.yml
-  run_once: true
   delegate_to: localhost
-
+  run_once: true
 - name: Create etherpad_installation_destination
   ansible.builtin.file:
+    mode: "0750"
     path: "{{ etherpad_installation_destination }}"
     state: directory
-    mode: "0750"
-
 - name: Install etherpad
   ansible.builtin.unarchive:
-    src: "{{ etherpad_url }}"
-    dest: "{{ etherpad_installation_destination }}"
-    remote_src: true
     creates: "{{ etherpad_working_directory }}"
+    dest: "{{ etherpad_installation_destination }}"
     mode: "0750"
-
+    remote_src: true
+    src: "{{ etherpad_url }}"
 - name: Configure etherpad
   ansible.builtin.template:
-    src: "{{ etherpad_configuration_file }}.j2"
     dest: "{{ etherpad_working_directory }}/{{ etherpad_configuration_file }}"
     mode: "0640"
+    src: "{{ etherpad_configuration_file }}.j2"
   notify:
     - Restart etherpad
-
 - name: Create etherpad service
   ansible.builtin.import_role:
     name: buluma.service
   vars:
     service_list:
-      - name: etherpad
-        description: Etherpad
+      - description: Etherpad
+        name: etherpad
         start_command: "{{ etherpad_working_directory }}/bin/run.sh --root"
         working_directory: "{{ etherpad_working_directory }}"
-
 - name: Start and enable etherpad
   ansible.builtin.service:
+    enabled: true
     name: "{{ etherpad_service }}"
     state: started
-    enabled: true
