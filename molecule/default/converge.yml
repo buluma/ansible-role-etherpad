@@ -1,8 +1,9 @@
-- become: true
-  gather_facts: true
-  hosts: all
-  name: Converge
-  roles:
-  - role: buluma.etherpad
-  vars:
-    etherpad_port: 9002
+---
+  - become: true
+    gather_facts: true
+    hosts: all
+    name: Converge
+    roles:
+      - role: buluma.etherpad
+    vars:
+      etherpad_port: 9002
