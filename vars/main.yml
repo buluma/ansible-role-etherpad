@@ -1,5 +1,5 @@
 ---
 etherpad_configuration_file: settings.json
 etherpad_service: etherpad
-etherpad_url: https://github.com/ether/etherpad-lite/archive/{{ etherpad_version }}.zip
+etherpad_url: "https://github.com/ether/etherpad-lite/archive/{{ etherpad_version }}.zip"
 etherpad_working_directory: "{{ etherpad_installation_destination }}/etherpad-lite-{{ etherpad_version }}"

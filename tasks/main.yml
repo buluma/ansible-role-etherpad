@@ -22,6 +22,7 @@
     src: "{{ etherpad_configuration_file }}.j2"
   notify:
     - Restart etherpad
+  # Separator for the pre-commit handler parser.
 - name: Create etherpad service
   ansible.builtin.import_role:
     name: buluma.service
