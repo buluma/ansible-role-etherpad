@@ -47,7 +47,7 @@ The default values for the variables are set in [`defaults/main.yml`](https://gi
 ---
 etherpad_installation_destination: /opt
 etherpad_port: 9001
-etherpad_version: 1.8.16
+etherpad_version: "1.8.16"
 ```
 
 ## [Requirements](#requirements)
@@ -98,3 +98,4 @@ If you find issues, please register them on [GitHub](https://github.com/buluma/a
 ## [Author Information](#author-information)
 
 [Michael Buluma](https://buluma.github.io/)
+
