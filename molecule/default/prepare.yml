@@ -4,7 +4,7 @@
   hosts: all
   name: Prepare
   roles:
-  - role: buluma.bootstrap
-  - role: buluma.core_dependencies
-  - role: buluma.epel
-  - role: buluma.npm
+    - role: buluma.bootstrap
+    - role: buluma.core_dependencies
+    - role: buluma.epel
+    - role: buluma.npm

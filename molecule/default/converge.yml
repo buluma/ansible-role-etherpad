@@ -4,6 +4,6 @@
   hosts: all
   name: Converge
   roles:
-  - role: buluma.etherpad
+    - role: buluma.etherpad
   vars:
     etherpad_port: 9002
