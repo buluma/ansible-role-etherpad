@@ -1,13 +1,19 @@
 # Changelog
 
-## [Unreleased](https://github.com/buluma/ansible-role-etherpad/tree/HEAD)
+## [26.6.0](https://github.com/buluma/ansible-role-etherpad/tree/26.6.0) (2026-06-14)
 
-[Full Changelog](https://github.com/buluma/ansible-role-etherpad/compare/24.3.31...HEAD)
+[Full Changelog](https://github.com/buluma/ansible-role-etherpad/compare/24.3.31...26.6.0)
 
 **Closed issues:**
 
 - Update action [\#20](https://github.com/buluma/ansible-role-etherpad/issues/20)
 - rebuild action [\#19](https://github.com/buluma/ansible-role-etherpad/issues/19)
+
+**Merged pull requests:**
+
+- Bump docker/setup-buildx-action from 3 to 4 [\#37](https://github.com/buluma/ansible-role-etherpad/pull/37) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump ansible/ansible-lint from 26.1.1 to 26.2.0 [\#35](https://github.com/buluma/ansible-role-etherpad/pull/35) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump actions/checkout from 4 to 6 [\#34](https://github.com/buluma/ansible-role-etherpad/pull/34) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [24.3.31](https://github.com/buluma/ansible-role-etherpad/tree/24.3.31) (2024-03-26)
 
