@@ -1,5 +1,9 @@
 # Changelog
 
+## [26.6.2](https://github.com/buluma/ansible-role-etherpad/tree/26.6.2) (2026-07-21)
+
+[Full Changelog](https://github.com/buluma/ansible-role-etherpad/compare/26.6.1...26.6.2)
+
 ## [26.6.1](https://github.com/buluma/ansible-role-etherpad/tree/26.6.1) (2026-06-15)
 
 [Full Changelog](https://github.com/buluma/ansible-role-etherpad/compare/26.6.0...26.6.1)
@@ -27,10 +31,8 @@
 
 - Bump dependabot/fetch-metadata from 1 to 2 [\#32](https://github.com/buluma/ansible-role-etherpad/pull/32) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump buluma/dependabot-auto-merge-action from 2.1.1 to 2.1.2 [\#30](https://github.com/buluma/ansible-role-etherpad/pull/30) ([dependabot[bot]](https://github.com/apps/dependabot))
-- Bump buluma/dependabot-auto-merge-action from 2.1.1 to 2.1.2 [\#29](https://github.com/buluma/ansible-role-etherpad/pull/29) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump release-drafter/release-drafter from 5 to 6 [\#28](https://github.com/buluma/ansible-role-etherpad/pull/28) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump release-drafter/release-drafter from 5 to 6 [\#27](https://github.com/buluma/ansible-role-etherpad/pull/27) ([dependabot[bot]](https://github.com/apps/dependabot))
-- Bump actions/checkout from 3 to 4 [\#22](https://github.com/buluma/ansible-role-etherpad/pull/22) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [1.2.0](https://github.com/buluma/ansible-role-etherpad/tree/1.2.0) (2024-01-20)
 
@@ -38,7 +40,9 @@
 
 **Merged pull requests:**
 
+- Bump buluma/dependabot-auto-merge-action from 2.1.1 to 2.1.2 [\#29](https://github.com/buluma/ansible-role-etherpad/pull/29) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump buluma/molecule-action from 6.0.0 to 6.0.1 [\#26](https://github.com/buluma/ansible-role-etherpad/pull/26) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump actions/checkout from 3 to 4 [\#22](https://github.com/buluma/ansible-role-etherpad/pull/22) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [1.1.0](https://github.com/buluma/ansible-role-etherpad/tree/1.1.0) (2024-01-02)
 
