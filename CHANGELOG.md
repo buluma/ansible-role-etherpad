@@ -22,6 +22,7 @@
 - Bump docker/setup-buildx-action from 3 to 4 [\#37](https://github.com/buluma/ansible-role-etherpad/pull/37) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump ansible/ansible-lint from 26.1.1 to 26.2.0 [\#35](https://github.com/buluma/ansible-role-etherpad/pull/35) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump actions/checkout from 4 to 6 [\#34](https://github.com/buluma/ansible-role-etherpad/pull/34) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump buluma/molecule-action from 6.0.0 to 6.0.1 [\#26](https://github.com/buluma/ansible-role-etherpad/pull/26) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [24.3.31](https://github.com/buluma/ansible-role-etherpad/tree/24.3.31) (2024-03-26)
 
@@ -41,7 +42,6 @@
 
 **Merged pull requests:**
 
-- Bump buluma/molecule-action from 6.0.0 to 6.0.1 [\#26](https://github.com/buluma/ansible-role-etherpad/pull/26) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump actions/checkout from 3 to 4 [\#22](https://github.com/buluma/ansible-role-etherpad/pull/22) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [1.1.0](https://github.com/buluma/ansible-role-etherpad/tree/1.1.0) (2024-01-02)
