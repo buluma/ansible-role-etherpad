@@ -77,7 +77,7 @@ The default values for the variables are set in [`defaults/main.yml`](https://gi
 ---
 etherpad_installation_destination: /opt
 etherpad_port: 9001
-etherpad_version: "1.8.16"
+etherpad_version: "3.3.10"
 ```
 
 ## [Requirements](#requirements)
@@ -130,3 +130,5 @@ If you find issues, please register them on [GitHub](https://github.com/buluma/a
 ## [Author Information](#author-information)
 
 [buluma](https://buluma.github.io/)
+
+Etherpad 3.3.10 requires Node.js 24 or newer and pnpm 12 or newer (upstream package manager: pnpm 12.4.2). Provision Node.js before applying the role. The upstream `bin/run.sh --root` entry point installs dependencies and builds the UI before starting the service. Existing databases and plugins require the upstream migration/compatibility review before production upgrades.
