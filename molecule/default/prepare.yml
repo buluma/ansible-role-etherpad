@@ -38,3 +38,34 @@
     - role: buluma.core_dependencies
     - role: buluma.epel
     - role: buluma.npm
+      npm_packages: "{{ ['nodejs'] if ansible_facts['os_family'] == 'Debian' else [] }}"
+
+  post_tasks:
+    - name: Install Node.js 24 RPM repository
+      ansible.builtin.yum_repository:
+        name: nodesource-nodejs-24
+        description: Node.js 24 Packages
+        baseurl: https://rpm.nodesource.com/pub_24.x/nodistro/nodejs/$basearch
+        gpgkey: https://rpm.nodesource.com/gpgkey/ns-operations-public.key
+        gpgcheck: true
+        module_hotfixes: true
+      when:
+        - ansible_facts['os_family'] == 'RedHat'
+
+    - name: Install current Node.js package
+      ansible.builtin.package:
+        name: nodejs
+        state: latest
+      when:
+        - ansible_facts['os_family'] == 'RedHat'
+
+    - name: Read the installed Node.js version
+      ansible.builtin.command:
+        cmd: node --version
+      changed_when: false
+      register: etherpad_node_version
+
+    - name: Require a Node.js version supported by Etherpad 3
+      ansible.builtin.assert:
+        that:
+          - (etherpad_node_version.stdout | regex_replace('^v', '')) is version('24.0.0', '>=')
