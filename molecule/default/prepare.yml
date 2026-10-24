@@ -45,7 +45,7 @@
         name: nodesource-nodejs-24
         description: Node.js 24 Packages
         baseurl: https://rpm.nodesource.com/pub_24.x/nodistro/nodejs/$basearch
-        gpgkey: https://rpm.nodesource.com/pub/el/NODESOURCE-GPG-SIGNING-KEY-EL
+        gpgkey: https://rpm.nodesource.com/gpgkey/ns-operations-public.key
         gpgcheck: true
         module_hotfixes: true
       when:
