@@ -38,6 +38,7 @@
     - role: buluma.core_dependencies
     - role: buluma.epel
     - role: buluma.npm
+      npm_packages: "{{ ['nodejs'] if ansible_facts['os_family'] == 'Debian' else [] }}"
 
   post_tasks:
     - name: Install Node.js 24 RPM repository
