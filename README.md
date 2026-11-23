@@ -65,6 +65,37 @@ The machine needs to be prepared. In CI this is done using [`molecule/default/pr
     - role: buluma.core_dependencies
     - role: buluma.epel
     - role: buluma.npm
+      npm_packages: "{{ ['nodejs'] if ansible_facts['os_family'] == 'Debian' else [] }}"
+
+  post_tasks:
+    - name: Install Node.js 24 RPM repository
+      ansible.builtin.yum_repository:
+        name: nodesource-nodejs-24
+        description: Node.js 24 Packages
+        baseurl: https://rpm.nodesource.com/pub_24.x/nodistro/nodejs/$basearch
+        gpgkey: https://rpm.nodesource.com/gpgkey/ns-operations-public.key
+        gpgcheck: true
+        module_hotfixes: true
+      when:
+        - ansible_facts['os_family'] == 'RedHat'
+
+    - name: Install current Node.js package
+      ansible.builtin.package:
+        name: nodejs
+        state: latest
+      when:
+        - ansible_facts['os_family'] == 'RedHat'
+
+    - name: Read the installed Node.js version
+      ansible.builtin.command:
+        cmd: node --version
+      changed_when: false
+      register: etherpad_node_version
+
+    - name: Require a Node.js version supported by Etherpad 3
+      ansible.builtin.assert:
+        that:
+          - (etherpad_node_version.stdout | regex_replace('^v', '')) is version('24.0.0', '>=')
 ```
 
 Also see a [full explanation and example](https://buluma.github.io/how-to-use-these-roles.html) on how to use these roles.
@@ -76,8 +107,9 @@ The default values for the variables are set in [`defaults/main.yml`](https://gi
 ```yaml
 ---
 etherpad_installation_destination: /opt
-etherpad_data_directory: /opt/etherpad-data
+etherpad_data_directory: "{{ etherpad_installation_destination }}/etherpad-data"
 etherpad_port: 9001
+# Release version without a `v` prefix; the role adds `v` to the archive URL.
 etherpad_version: "3.3.20"
 ```
 
@@ -131,5 +163,3 @@ If you find issues, please register them on [GitHub](https://github.com/buluma/a
 ## [Author Information](#author-information)
 
 [buluma](https://buluma.github.io/)
-
-Etherpad 3.3.20 requires Node.js 24.0.0 or newer and pnpm 12.0.0 or newer (upstream package manager: pnpm 12.4.2). For this security release, upstream recommends Node.js 24.22.1 or newer. Provision Node.js before applying the role. The upstream `bin/run.sh --root` entry point installs dependencies and builds the UI before starting the service. By default, the role stores the dirty database in `/opt/etherpad-data/dirty.db` and migrates one existing versioned database there during the first apply. If multiple versioned databases exist, migration stops for manual selection. Existing databases and plugins still require the upstream migration/compatibility review before production upgrades.
